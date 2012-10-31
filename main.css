@@ -3,17 +3,7 @@ html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	height: 100%;
 	color: #111;
-	background: url('http://www.unsigneddesign.com/Seamless_background_textures/1200px/seamlesstexture14_1200.jpg');
-	/*background: url('images/back1.png');*/
-	/*background: url('images/back2.png');*/
-	/*background: #FFF;*/
 	margin: 0px;
-}
-
-#header
-{
-	padding: 2%;
-	/*background: #FFF;*/
 }
 
 #main
@@ -21,6 +11,14 @@ html, body {
 	width: 1000px;
 	height: 100%;
 	margin: auto;
-	/*background: #EEE;*/
-	background: url('images/back2_p.png');
+}
+
+#header
+{
+	padding: 2%;
+}
+
+#footer
+{
+
 }

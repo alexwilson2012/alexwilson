@@ -18,6 +18,8 @@
 	<span>Some things that I am proud of...</span><br>
 	<a href='http://eventsatnu.com' target='_blank'><img width='20%' src='images/eventsatnu_logo.png'></a>
 	<a href='http://happinessclub.org' target='_blank'><img width='20%' src='images/happinessclub.png'></a>
+
+	<div id='footer'></div>
 </div>
 
 </body>
