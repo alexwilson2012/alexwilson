@@ -13,7 +13,7 @@
 	<div id='header'>Hi, I'm Alex!</div>
 	<!-- <div style="background: black; height: 1px;"></div> -->
 	<!-- <div>Welcome to my website!</div><br> -->
-	<img width='40%' style="border-radius: 20px; box-shadow: 5px 5px 15px black;" src='images/alex.jpg'><br><br><br><br>
+	<img width='35%' style="border-radius: 20px; box-shadow: 5px 5px 15px black;" src='images/alex.jpg'><br><br><br><br>
 
 	<span>Some things that I am proud of...</span><br>
 	<span id='apps'>
