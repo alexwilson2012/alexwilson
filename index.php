@@ -17,10 +17,11 @@
 
 	<span>Some things that I am proud of...</span><br>
 	<span id='apps'>
-		<a href='http://eventsatnu.com' target='_blank'><img width='20%' src='images/eventsatnu_logo.png'></a>
-		<a href='http://happinessclub.org' target='_blank'><img width='20%' src='images/happinessclub.png'></a>
-		<a href='http://ec2-54-242-115-65.compute-1.amazonaws.com' target='_blank'><img style='width: 20%' src='images/intouch2.png'></a>
-		<a href='http://alexdeanwilson.org/grocerypad' target='_blank'><img style='width: 20%' src='images/grocerypad2.png'></a>
+		<a href='http://chiselnote.com' target='_blank'><img width='16%' src='images/chiselnote_logo.png'></a>
+		<a href='http://eventsatnu.com' target='_blank'><img width='16%' src='images/eventsatnu_logo.png'></a>
+		<a href='http://happinessclub.org' target='_blank'><img width='16%' src='images/happinessclub.png'></a>
+		<a href='http://alexdeanwilson.org/grocerypad' target='_blank'><img style='width: 16%' src='images/grocerypad2.png'></a>
+		<a href='http://ec2-54-242-115-65.compute-1.amazonaws.com/In-Touch-Native/www/login.html' target='_blank'><img style='width: 16%' src='images/intouch2.png'></a>
 		<!-- ; border-radius: 30px; box-shadow: 5px 5px 15px black -->
 	</span>
 
