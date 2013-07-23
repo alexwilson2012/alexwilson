@@ -14,42 +14,50 @@
 		}
 
 		div.countdown {
-			background-color:rgba(255,255,255,0.2);
+			background-color:rgba(255,255,255,0.3);
 			display: inline-block;
 			padding: 10px;
 			margin: 10px;
 			border-radius: 15px;
+			opacity: 0;
 		}
 
 	</style>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 
-		// (function(){
-
+		(function(){
 
 			var date_i_see_sophie = new Date("August 23, 2013 15:43:00"),
 				countable_time = {};
 
-				setInterval(function(){
-					var today = new Date(),
-						millisecond_difference = date_i_see_sophie-today;
-					countable_time.seconds = millisecond_difference/1000 >> 0;
-					countable_time.minutes = countable_time.seconds/60 >> 0;
-					countable_time.hours = countable_time.minutes/60 >> 0;
-					countable_time.days = countable_time.hours/24 >> 0;
-					countable_time.weeks = countable_time.days/7 >> 0;
+			updateCounter();
 
-					$('#time').html('');
-					$('#time')
-						.append(countable_time.weeks + " weeks<br>")
-						.append(countable_time.days + " days<br>")
-						.append(countable_time.hours + " hours<br>")
-						.append(countable_time.minutes + " minutes<br>")
-						.append(countable_time.seconds + " seconds<br>");
-				},1000);
+			setInterval(function(){
+				updateCounter();
+			},1000);
 
-		// })();
+			function updateCounter() {
+				var today = new Date(),
+					millisecond_difference = date_i_see_sophie-today;
+				countable_time.seconds = millisecond_difference/1000 >> 0;
+				countable_time.minutes = countable_time.seconds/60 >> 0;
+				countable_time.hours = countable_time.minutes/60 >> 0;
+				countable_time.days = countable_time.hours/24 >> 0;
+				countable_time.weeks = countable_time.days/7 >> 0;
+
+				$('.countdown').animate({
+					opacity: 1
+				}, 1000);
+				$('#time').html('');
+				$('#time')
+					.append(countable_time.weeks + " weeks<br>")
+					.append(countable_time.days + " days<br>")
+					.append(countable_time.hours + " hours<br>")
+					.append(countable_time.minutes + " minutes<br>")
+					.append(countable_time.seconds + " seconds<br>");
+			}
+		})();
 
 
 	</script>
