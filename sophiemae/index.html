@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Sophie Mae</title>
+	<style type="text/css">
+
+		html { 
+		  background: url(dock1.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+
+		  font-family: 'Lucida Grande', Helvetica;
+		}
+
+		div.countdown {
+			background-color:rgba(255,255,255,0.2);
+			display: inline-block;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 15px;
+		}
+
+	</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		// (function(){
+
+
+			var date_i_see_sophie = new Date("August 23, 2013 15:43:00"),
+				countable_time = {};
+
+				setInterval(function(){
+					var today = new Date(),
+						millisecond_difference = date_i_see_sophie-today;
+					countable_time.seconds = millisecond_difference/1000 >> 0;
+					countable_time.minutes = countable_time.seconds/60 >> 0;
+					countable_time.hours = countable_time.minutes/60 >> 0;
+					countable_time.days = countable_time.hours/24 >> 0;
+					countable_time.weeks = countable_time.days/7 >> 0;
+
+					$('#time').html('');
+					$('#time')
+						.append(countable_time.weeks + " weeks<br>")
+						.append(countable_time.days + " days<br>")
+						.append(countable_time.hours + " hours<br>")
+						.append(countable_time.minutes + " minutes<br>")
+						.append(countable_time.seconds + " seconds<br>");
+				},1000);
+
+		// })();
+
+
+	</script>
+</head>
+<body>
+	<div class='countdown'>
+		<div id='time'></div>
+		<div class='soph-text'>...until I see my Sophie!</div>
+	</div>
+
+
+
+</body>
+</html>
