@@ -7,12 +7,11 @@
 	<style type="text/css">
 
 		html { 
-			background: url(me.jpg) no-repeat center center fixed; 
+			background: url(me2.jpg) no-repeat center center fixed; 
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
-
 			font-family: 'Lucida Grande', Helvetica;
 		}
 
@@ -22,6 +21,10 @@
 		
 		.activity {
 			padding: 10px 0px;
+		}
+
+		.activity:first-child {
+			padding-top: 0px;
 		}
 
 		.name {
@@ -38,6 +41,16 @@
 
 		.job a:visited {
 			text-decoration: none;
+		}
+
+		.job-image {
+			width: 200px;
+			height: 25px;
+			margin-top: 30px;
+		}
+
+		.job-image img {
+			width: 100%;
 		}
 
 		.ftb a, .ftb a:visited {
@@ -97,6 +110,10 @@
 			.right-wrap {
 				font-size: 0.6em;
 			}
+
+			.job-image {
+				max-width: 100px;
+			}
 		}
 
 	</style>
@@ -122,31 +139,17 @@
 		<div class="name">Alex Wilson</div>
 		<div class="activity">
 			<div class="words">
-				<div class="job-title">Software Engineer</div>
+				<a href="https://www.graphiq.com">
+					<div class="job-image">
+						<img src="logo_graphiq_long.png">
+					</div>
+				</a>
+				<div class="job-title">Senior Software Engineer</div>
 				<div class="status current">
 					July 2013 - present
 				</div>
-				<div class="job ftb"><a href="http://www.findthebest.com">FindTheBest</a></div>
-			</div>
-			<div class="icon">
-				<a href="http://www.findthebest.com"><img src="ftb_icon.png"></a>
-			</div>
-		</div>
-		<div class="activity">
-			<div class="words">
-				<div class="job-title">Chisel - iPad App</div>
-				<div class="status">
-					Nov 2012 - June 2013
-				</div>
-				<div class="job chisel"><a href="http://www.chiselnote.com">chiselnote.com</a></div>
-			</div>
-			<div class="icon">
-				<a href="http://www.chiselnote.com"><img src="chiselnote_logo.png"></a>
 			</div>
 		</div>
 	</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="me.js"></script>
 </body>
 </html>
